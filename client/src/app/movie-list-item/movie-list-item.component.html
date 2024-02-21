@@ -1,0 +1,24 @@
+<!-- <section> -->
+<!-- <p style="color: aliceblue">{{ movie?.id }}</p>
+  <a routerLink="/movies/{{ movie.id }}"></a>
+  <img src="https://image.tmdb.org/t/p/w500/{{ movie.poster_path }}" alt="" />
+  <h2 style="color: aliceblue">{{ movie?.title }}</h2> -->
+<!-- <p style="color: white">{{ movie?.tagline }}</p> -->
+
+<!-- Access other properties of the movie object as needed -->
+<!-- <h2 style="color: aliceblue; padding-top: 10px">
+    hey there{{ getCategoryMovie(movie.id) }}
+  </h2>
+</section> -->
+<section>
+  <h2 style="color: aliceblue; padding-top: 10px">{{ movie.title }}</h2>
+  <img
+    class="card-image"
+    src="https://image.tmdb.org/t/p/w500/{{ movie.poster_path }}"
+    alt="{{ movie.title }} "
+    routerLink="/movies/{{ movie.id }}"
+  />
+  <h2 style="color: aliceblue">{{ movie.tagline }}</h2>
+  <h5 style="color: aliceblue">{{ movie.overview }}</h5>
+  <!-- Display other movie details here -->
+</section>
